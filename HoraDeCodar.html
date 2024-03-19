@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var nome_do_carro = "fusca"
+
+        console.log(nome_do_carro)
+
+        var nome_do_usuario = prompt("digite seu nome")
+        alert("Olá, " + nome_do_usuario)
+
+        var idade = prompt("Qual a sua idade?")
+        alert("Olá, " + nome_do_usuario + ", sua idade é " + idade + ".")
+
+        //Considerando a figura abaixo, escreva um programa para cada forma que calcule e exiba em tela cada uma de suas respectivas áreas. O usuário irá informar os valores de cada variável.
+
+        //Retangulo: A = base.altura
+        var base = parseFloat(prompt("digite a base"))
+        var altura = parseFloat(prompt("digite a altura"))
+        var area = base*altura
+        alert("Área " + area)
+
+        //Quadrado
+        var lado = parseFloat(prompt("digite o lado"))
+        area = lado*lado
+        alert("Área do quadrado " + area)
+
+        //Losango
+        var diagonal_maior = parseFloat(prompt("Digite a diagonal maior"))
+        var diagonal_menor = parseFloat(prompt("Digite a diagonal menor"))
+        area = (diagonal_maior*diagonal_menor)/2
+        alert("Área do Losango " + area)
+
+        //Trapézio
+        var base_maior = parseFloat(prompt("Digite a base maior"))
+        var base_menor = parseFloat(prompt("Digite a base menor"))
+        altura = parseFloat(prompt("Digite a altura"))
+        area = ((base_maior+base_menor)*altura)/2
+        alert("Área do Trapézio " + area)
+
+        //Paralelogramo
+        base = parseFloat(prompt("Digite a base"))
+        altura = parseFloat(prompt("Digite a altura"))
+        area = base*altura
+        alert("Área do Paralelogramo " + area)
+
+        //Triângulo
+        base = parseFloat(prompt("Digite a base"))
+        altura = parseFloat(prompt("Digite a altura"))
+        area = (base*altura)/2
+        alert("Área do Triângulo " + area)
+
+        //Círculo
+        var raio = parseFloat(prompt("Digite o raio"))
+        area = (raio*raio)*Math.PI
+        alert("Área do Círculo " + area)
+
+        //
+    </script>
+</body>
+</html>
